@@ -14,19 +14,19 @@
   "url": "https://github.com/CyprianStream/slayer.git",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
+  "bugs": "https://github.com/CyprianStream/slayer/issues",
   "changelog": "CHANGELOG.md",
   "media": [
     {
       "type": "setup",
-      "url": "systems/slayer/assets/anvil-impact.png",
-      "thumbnail": "systems/slayer/assets/anvil-impact.png"
+      "url": "",
+      "thumbnail": ""
     }
   ],
-  "version": "2.0.0",
+  "version": "0.0.1",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
+    "minimum": 12,
+    "verified": "12"
   },
   "esmodules": ["module/slayer.mjs"],
   "styles": ["css/slayer.css"],
@@ -42,9 +42,9 @@
   "socket": false,
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/slayer/assets/anvil-impact.png",
+  "background": "",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "secondaryTokenAttribute": "armorClass"
 }

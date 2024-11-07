@@ -12,17 +12,33 @@ export default class SlayerCharacter extends SlayerActorBase {
         value: new fields.NumberField({ ...requiredInteger, initial: 1 })
       }),
     });
+    schema.armorClass = new fields.SchemaField({
+      value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
+    });
 
     // Iterate over ability names and create a new SchemaField for each.
     schema.abilities = new fields.SchemaField(Object.keys(CONFIG.SLAYER.abilities).reduce((obj, ability) => {
       obj[ability] = new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0 }),
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      });
+      return obj;
+    }, {}));
+    schema.savingThrows = new fields.SchemaField(Object.keys(CONFIG.SLAYER.savingThrows).reduce((obj, savingThrow) => {
+      obj[savingThrow] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 2, min: 0 }),
+      });
+      return obj;
+    }, {}));
+    schema.skills = new fields.SchemaField(Object.keys(CONFIG.SLAYER.skills).reduce((obj, skills) => {
+      obj[skills] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 2, min: 0 }),
       });
       return obj;
     }, {}));
 
     return schema;
   }
+  
 
   prepareDerivedData() {
     // Loop through ability scores, and add their modifiers to our sheet output.
