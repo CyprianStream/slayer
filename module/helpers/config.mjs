@@ -21,3 +21,15 @@ SLAYER.abilityAbbreviations = {
   wis: 'SLAYER.Ability.Wis.abbr',
   cha: 'SLAYER.Ability.Cha.abbr',
 };
+
+SLAYER.savingThrows = {
+  rflx: 'SLAYER.Ability.rflx.long',
+  fort: 'SLAYER.Ability.fort.long',
+  will: 'SLAYER.Ability.will.long',
+};
+
+SLAYER.savingThrowsAbbreviations = {
+  rflx: 'SLAYER.Ability.rflx.long',
+  fort: 'SLAYER.Ability.fort.long',
+  will: 'SLAYER.Ability.will.long',
+};

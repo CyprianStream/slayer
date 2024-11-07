@@ -29,13 +29,6 @@ export default class SlayerCharacter extends SlayerActorBase {
       });
       return obj;
     }, {}));
-    schema.skills = new fields.SchemaField(Object.keys(CONFIG.SLAYER.skills).reduce((obj, skills) => {
-      obj[skills] = new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 2, min: 0 }),
-      });
-      return obj;
-    }, {}));
-
     return schema;
   }
   

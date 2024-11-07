@@ -1,4 +1,5 @@
-# The WIP Slayer TTRPG System! Actively being developed by SnuSnu, with the foundry port being developed by Cyprian
+# The WIP Slayer TTRPG System!
+### Actively being developed by SnuSnu, with the foundry port being developed by Cyprian
 
 Support the development of the Slayer system on their kickstarter [here](kickstarter.com)
 
